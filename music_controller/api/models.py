@@ -16,8 +16,8 @@ def generate_unique_code(): # make a unique number for every room that use for s
 
 # Create models here, and you can put most of logics on models-page for make a good models
 class Room(models.Model):
-    code = models.CharField(max_length=8, default="", unique=True)
-    host = models.CharField(max_length=50, unique=True) # every room have only one host
+    code = models.CharField(max_length=8, default=generate_unique_code, unique=True) # every time make a new room call the generate_unique_code's method (with out any brackets)
+    host = models.CharField(max_length=50, unique=True) # Every room have only one host. For at identify host we should use session-key.# Session is a temporary connection between to computer or devices
     guest_can_pause = models.BooleanField(null=False, default=False) 
     votes_to_skip = models.IntegerField(null=False, default=1)
     created_at = models.DateTimeField(auto_now_add=True)
