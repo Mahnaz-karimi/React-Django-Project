@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { render } from "react-dom";
 import HomePage from "./HomePage";
-
-
+import CreateRoomPage from "./CreateRoomPage";
+import RoomJoinPage from "./HomePage";
 
 export default class App extends Component {
   constructor(props) {

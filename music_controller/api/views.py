@@ -8,7 +8,7 @@ from rest_framework.response import Response # get response from our view
 # Create your views here.
 
 
-class RoomView(generics.ListAPIView): # is a already set up to return to us all of difference room  
+class RoomView(generics.ListAPIView): # Is a already set up to return to us all of difference room  
     queryset = Room.objects.all() 
     serializer_class = RoomSerializer
 
