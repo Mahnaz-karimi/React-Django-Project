@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start" : "REACT_APP_MYAPP=http://localhost:8080/ node webpack-dev-server --config webpack.dev.js",
     "dev": "webpack --mode development --watch",
     "build": "webpack --mode production"
   },

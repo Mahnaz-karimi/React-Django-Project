@@ -37,7 +37,7 @@ export default class CreateRoomPage extends Component {
     });
   }
 
-  handleRoomButtonPressed() {
+  handleRoomButtonPressed() {  
     const requestOptions = {
       method: "POST",
       headers: { "Content-Type": "application/json" },
